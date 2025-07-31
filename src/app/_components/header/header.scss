@@ -1,0 +1,43 @@
+.header {
+  width: 100%;
+  padding: 12px 16px;
+
+  background-color: #fff;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid #fbcfe8;
+
+  .container {
+    max-width: 1280px; // ou 1440px, se quiser mais largo
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 16px; // padding lateral para evitar colar na borda
+    display: flex;
+    justify-content: space-between; // ou center, conforme necessário
+    align-items: center;
+  }
+
+  .header-endereco {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #ec003f;
+    font-size: 0.875rem; // 14px
+  }
+
+  .header-endereco img {
+    width: 14px;
+    height: 14px;
+    color: #ec003f;
+  }
+
+  .header-navbar {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .header-navbar img {
+    width: 25px;
+    height: 25px;
+  }
+}
