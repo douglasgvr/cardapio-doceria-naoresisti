@@ -17,18 +17,17 @@
     align-items: center;
   }
 
+  .header-endereco img {
+    width: 15px;
+    height: 15px;
+  }
+
   .header-endereco {
     display: flex;
     align-items: center;
     gap: 0.5rem;
     color: #ec003f;
     font-size: 0.875rem; // 14px
-  }
-
-  .header-endereco img {
-    width: 14px;
-    height: 14px;
-    color: #ec003f;
   }
 
   .header-navbar {
