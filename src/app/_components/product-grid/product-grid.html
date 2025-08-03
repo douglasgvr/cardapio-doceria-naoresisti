@@ -1,0 +1,36 @@
+<section class="product-grid">
+  <!-- Frase atrativa -->
+  <div class="chamada">
+    <h1>Cada mordida é um momento de pura felicidade! 🍰</h1>
+    <p>
+      Feitos com amor e os melhores ingredientes, nossos doces são irresistíveis
+      e transformam qualquer dia em especial ✨
+    </p>
+  </div>
+
+  <!-- Cabeçalho da categoria -->
+  <div class="topo-categoria">
+    <h2>{{ categoryName }}</h2>
+    <button (click)="onBackToCategories()" class="voltar">← Voltar</button>
+  </div>
+
+  <!-- Lista de produtos -->
+  <div class="grid">
+    <div class="card" *ngFor="let product of filteredProducts">
+      <div class="imagem">
+        <img [src]="product.image" [alt]="product.name" />
+      </div>
+      <div class="conteudo">
+        <h3>{{ product.name }}</h3>
+        <p>{{ product.description }}</p>
+        <div class="rodape">
+          <span class="preco">R$ {{ product.price.toFixed(2) }}</span>
+          <button (click)="onAddToCart(product)">
+            <img src="/assets/icons/plus.svg" alt="Adicionar" />
+            Adicionar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
