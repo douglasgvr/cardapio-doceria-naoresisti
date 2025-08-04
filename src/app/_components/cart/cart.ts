@@ -1,5 +1,6 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
+// Update the path below to the correct location of BadgeComponent
 import { BadgeComponent } from '../badge/badge';
 import { ButtonComponent } from '../button/button';
 
